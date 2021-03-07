@@ -164,14 +164,15 @@ export const Table = styled.table<{}>(withReset, withMargin, ({ theme }) => ({
   lineHeight: '24px',
   padding: 0,
   borderCollapse: 'collapse',
+  color: `${theme.color.defaultText}`,
   '& tr': {
     borderTop: `1px solid ${theme.appBorderColor}`,
-    backgroundColor: 'white',
+    backgroundColor: `${theme.background.content}`,
     margin: 0,
     padding: 0,
   },
   '& tr:nth-of-type(2n)': {
-    backgroundColor: `${theme.color.lighter}`,
+    backgroundColor: `${theme.background.app}`,
   },
   '& tr th': {
     fontWeight: 'bold',
